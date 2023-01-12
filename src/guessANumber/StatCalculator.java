@@ -24,8 +24,8 @@ public class StatCalculator {
 	private int totalGames = scores.size();
 
 	/**
-	 * @param n Takes a List as an argument, built for the scores ArrayList in the
-	 *          class
+	 * @param num Takes a List as an argument, built for the scores ArrayList in the
+	 *            class
 	 * @return number of guess per game (mean score)
 	 */
 	public double averageScore(List<Integer> num) {
@@ -39,8 +39,8 @@ public class StatCalculator {
 	/**
 	 * Method that determines the player's highest number of guesses of their games
 	 * 
-	 * @param n Takes a list as an argument, built for the scores ArrayList in the
-	 *          class
+	 * @param num Takes a list as an argument, built for the scores ArrayList in the
+	 *            class
 	 */
 	public int highScore(List<Integer> num) {
 		int current = 0;
@@ -55,8 +55,8 @@ public class StatCalculator {
 	/**
 	 * Method calculates the fewest number of guesses required to complete the game
 	 * 
-	 * @param n Takes a list as an argument, built for the scores ArrayList in the
-	 *          class
+	 * @param num Takes a list as an argument, built for the scores ArrayList in the
+	 *            class
 	 */
 	public int lowScore(List<Integer> num) {
 		int current = 100000;
@@ -69,6 +69,8 @@ public class StatCalculator {
 	}
 
 	/**
+	 * Gets the value for total number of rounds played
+	 * 
 	 * @return the totalGames
 	 */
 	public int getTotalGames() {
